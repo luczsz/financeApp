@@ -44,6 +44,11 @@ export const styles = StyleSheet.create({
         borderRadius: 44,
         margin: 5,
     },
+    listContainer:{
+        paddingStart: 14,
+        paddingEnd: 14,
+        marginTop: 20,
+    },
 });
 
 export const styled = StyleSheet.create({

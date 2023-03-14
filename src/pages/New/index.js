@@ -1,10 +1,17 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function Adicionar() {
+import { styles } from './style';
+
+export default function Adicionar({ data }) {
  return (
-   <View>
-        <Text>ADD</Text>
+   <View style={styles.container} >
+        <Text> {data.despesa} </Text>
+        
+        <View style={styles.nowView} >
+          <Text> R$ {data.valor} </Text>
+          <Text> {data.data} </Text>
+        </View>
    </View>
   );
 }
