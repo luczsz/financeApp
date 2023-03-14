@@ -3,7 +3,9 @@ import { View, Text, TouchableOpacity, SafeAreaView, Modal, TextInput, FlatList 
 
 import { styled, styles } from './style';
 import { Feather } from '@expo/vector-icons';
-import Adicionar from '../New';
+//import Adicionar from '../New';
+import TasksList from '../../components/TasksList';
+import Cards from '../../components/Cards';
 
 
 import { useNavigation } from '@react-navigation/native';
@@ -159,13 +161,15 @@ export default function Home() {
             </View>
 
           </View>
+
+          <Cards/>
           
           <View style={styles.content} >
             <View style={styles.listContainer} >
               <FlatList
                 data={tasks}
                 keyExtractor={ (item) => item.id}
-                renderItem={ ({item}) => <Adicionar data={item} /> }
+                renderItem={ ({item}) => <TasksList data={item} /> }
               />
             </View>
           </View>
