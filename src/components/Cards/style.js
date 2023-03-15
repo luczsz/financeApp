@@ -24,10 +24,21 @@ export const styles = StyleSheet.create({
     },
 
     cardDespesas:{
-        backgroundColor: 'grey'
+        backgroundColor: theme.colors.primary,
+        paddingStart: 12,
+        alignItems: 'flex-start',
     },
     cardReceitas:{
-        backgroundColor: 'red'
+        backgroundColor: theme.colors.on,
+        paddingStart: 12,
+        alignItems: 'flex-start',
+    },
+
+    texts:{
+        color: theme.colors.teste3,
+        fontSize: 18,
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
     },
 
 })

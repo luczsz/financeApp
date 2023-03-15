@@ -14,15 +14,17 @@ export default function Cards() {
     >
 
             <View style={[styles.cardGeral, styles.cardReceitas]}>
-                <Text>
-                    GERAL
+                <Text style={styles.texts} >Receitas</Text>
+                <Text style={styles.texts} >
+                    RECEITA: R$ 19,00
                 </Text>
             </View>
 
-            <View style={[styles.cardDespesas, styles.cardGeral]}>
-              <Text>
-                  DESPESAS
-              </Text>
+            <View style={[styles.cardGeral, styles.cardDespesas]}>
+            <Text style={styles.texts} >Gastos</Text>
+                <Text style={styles.texts} >
+                    Gasto: R$ 19,00
+                </Text>
             </View>
             
     </ScrollView>
